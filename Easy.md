@@ -86,11 +86,48 @@ Converts all the elements in list to int
 integer_list = map(int, input().split())
 ```
 ## Q7
+You are given a string and your task is to swap cases. In other words, convert all lowercase letters to uppercase letters and vice versa.
+```
+def swap_case(s):
+    t = ''
+    for i in s:
+        if i.isupper():
+            t+=i.lower()
+        elif i.islower():
+            t+=i.upper()
+        else:
+            t+=i
+    return t
+```
+
+## Q8
+the user enters a string and a substring. You have to print the number of times that the substring occurs in the given string. String traversal will take place from left to right, not from right to left.
+
+```
+def count_substring(string, sub_string):
+    l = len(string)
+    sl = len(sub_string)
+    count=0
+    for i in range(0,l-sl+1):
+        if string[i:i+sl]==sub_string:
+            count+=1
+    return count
+```
+
+## Q9
 
 
 
-## Q1
+## Q10
 
 
 
-## Q1
+## Q11
+
+
+
+## Q12
+
+
+
+## Q13
